@@ -1,8 +1,8 @@
 function validateForm(){
 
-let name = document.getElementById("fullname").value;
+let name = document.getElementById("name").value;
 let email = document.getElementById("email").value;
-let phone = document.getElementById("telephone").value;
+let phone = document.getElementById("phone").value;
 
 if(name=="" || email=="" || phone==""){
 alert("Please fill in all required fields");

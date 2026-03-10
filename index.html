@@ -1,101 +1,74 @@
-<!DOCTYPE html>
-<html>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <p class="subtitle">Please fill in your details below</p>
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-
-        <title>Job Application Form</title>
-
-    </head>
-
-    <body>
-
-         <form onsubmit="return validateForm()">
-
+        <form onsubmit="return validateForm()">
             <fieldset>
-
                 <legend>Personal Information</legend>
 
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
 
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="telephone">Phone Number</label>
+                <input type="tel" id="telephone" name="telephone">
 
-                <label for="resume">Upload Resume:</label><br>
-                <input type="file" id="resume" name="resume" required><br><br>
-
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume">
             </fieldset>
 
             <fieldset>
-
                 <legend>Position Information</legend>
 
-                Desired Job Title:
-                <select name="jobTitle" required>
+                <label for="jobtitle">Desired Job Title</label>
+                <select id="jobtitle" name="jobtitle">
                     <option>Software Developer</option>
                     <option>Web Designer</option>
-                    <option>IT Support</option>
-                    <option>Database Administrator</option>
+                    <option>Data Analyst</option>
                 </select>
-                <br><br>
 
-                Available Start Date:
-                <input type="date" id="startDate" name="startDate" required>
-
+                <label for="startdate">Available Start Date</label>
+                <input type="date" id="startdate" name="startdate">
             </fieldset>
 
             <fieldset>
-
                 <legend>Employment Type</legend>
-
-                <input type="radio" name="employment" value="Part-time Contract" required> Part-time Contract<br>
-                <input type="radio" name="employment" value="Part-time Permanent"> Part-time Permanent<br>
-                <input type="radio" name="employment" value="Full-time Contract"> Full-time Contract<br>
-                <input type="radio" name="employment" value="Full-time Permanent"> Full-time Permanent<br>
-
+                <div class="radio-group">
+                    <label><input type="radio" name="employment"> Part-time Contract</label>
+                    <label><input type="radio" name="employment"> Part-time Permanent</label>
+                    <label><input type="radio" name="employment"> Full-time Contract</label>
+                    <label><input type="radio" name="employment"> Full-time Permanent</label>
+                </div>
             </fieldset>
 
             <fieldset>
-
                 <legend>Areas of Interest</legend>
-
-                <input type="checkbox" name="interest" value="Account Executive"> Account Executive<br>
-                <input type="checkbox" name="interest" value="Business Development"> Business Development<br>
-                <input type="checkbox" name="interest" value="Inside Sales"> Inside Sales<br>
-                <input type="checkbox" name="interest" value="Sales Manager"> Sales Manager<br>
-                <input type="checkbox" name="interest" value="VP Sales"> VP Sales<br>
-
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Account Executive</label>
+                    <label><input type="checkbox"> Business Development</label>
+                    <label><input type="checkbox"> Inside Sales</label>
+                    <label><input type="checkbox"> Sales Manager</label>
+                    <label><input type="checkbox"> VP Sales</label>
+                </div>
             </fieldset>
 
             <fieldset>
+                <legend>Additional Information</legend>
 
-                <legend>Relocation</legend>
+                <label>Willing to Relocate?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="relocate"> Yes</label>
+                    <label><input type="radio" name="relocate"> No</label>
+                </div>
 
-                <input type="radio" name="relocate" value="Yes" required> Yes
-                <input type="radio" name="relocate" value="No"> No
-
+                <label for="message">Why are you suitable for this role?</label>
+                <textarea id="message" name="message"></textarea>
             </fieldset>
 
-            <fieldset>
-
-                <legend>Additional Message</legend>
-
-                <textarea rows="5" cols="40" placeholder="Why are you suitable for this role?"></textarea>
-
-            </fieldset>
-
-            <br>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-
+            <button type="submit">Submit Application</button>
         </form>
-
-    </body>
-
-</html>
+    </div>
+</body>
