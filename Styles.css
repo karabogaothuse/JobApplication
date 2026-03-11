@@ -97,11 +97,13 @@ button:hover {
 label[for="message"] {
     display: block;
     margin-bottom: 8px;
+    margin-top: 10px;
 }
 
 #message {
     display: block;
-    width: 100%;
+    width: 900px;
     max-width: 500px;
     height: 120px;
+    resize: none;
 }
