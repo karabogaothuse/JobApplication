@@ -98,15 +98,14 @@ textarea {
 
 label[for="message"] {
     display: block;
-    margin-top: 10px;
     margin-bottom: 8px;
 }
 
 #message {
     display: block;
-    width: 800px;
-    max-width: 900%;
-    height: 200px;
+    width: 700px;
+    height: 180px;
+    resize: none;
 }
 
 .submit-btn {
