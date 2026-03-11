@@ -1,74 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="container">
-        <h1>Job Application Form</h1>
-        <p class="subtitle">Please fill in your details below</p>
+    <div class="container py-5">
+        <div class="form-card">
+            <h1>Job Application Form</h1>
+            <p class="subtitle">Please fill in your details below</p>
 
-        <form onsubmit="return validateForm()">
-            <fieldset>
-                <legend>Personal Information</legend>
+            <form onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Personal Information</legend>
 
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+                        <div class="col-md-6">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
 
-                <label for="telephone">Phone Number</label>
-                <input type="tel" id="telephone" name="telephone">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="telephone">Phone Number</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
 
-                <label for="resume">Upload Resume</label>
-                <input type="file" id="resume" name="resume">
-            </fieldset>
+                        <div class="col-md-6">
+                            <label for="resume">Upload Resume</label>
+                            <input type="file" id="resume" name="resume">
+                        </div>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <legend>Position Information</legend>
+                <fieldset>
+                    <legend>Position Information</legend>
 
-                <label for="jobtitle">Desired Job Title</label>
-                <select id="jobtitle" name="jobtitle">
-                    <option>Software Developer</option>
-                    <option>Web Designer</option>
-                    <option>Data Analyst</option>
-                </select>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="jobtitle">Desired Job Title</label>
+                            <select id="jobtitle" name="jobtitle">
+                                <option>Software Developer</option>
+                                <option>Web Designer</option>
+                                <option>Data Analyst</option>
+                            </select>
+                        </div>
 
-                <label for="startdate">Available Start Date</label>
-                <input type="date" id="startdate" name="startdate">
-            </fieldset>
+                        <div class="col-md-6">
+                            <label for="startdate">Available Start Date</label>
+                            <input type="date" id="startdate" name="startdate">
+                        </div>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <legend>Employment Type</legend>
-                <div class="radio-group">
-                    <label><input type="radio" name="employment"> Part-time Contract</label>
-                    <label><input type="radio" name="employment"> Part-time Permanent</label>
-                    <label><input type="radio" name="employment"> Full-time Contract</label>
-                    <label><input type="radio" name="employment"> Full-time Permanent</label>
-                </div>
-            </fieldset>
+                <fieldset>
+                    <legend>Employment Type</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="employment"> Part-time Contract</label>
+                        <label><input type="radio" name="employment"> Part-time Permanent</label>
+                        <label><input type="radio" name="employment"> Full-time Contract</label>
+                        <label><input type="radio" name="employment"> Full-time Permanent</label>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <legend>Areas of Interest</legend>
-                <div class="checkbox-group">
-                    <label><input type="checkbox"> Account Executive</label>
-                    <label><input type="checkbox"> Business Development</label>
-                    <label><input type="checkbox"> Inside Sales</label>
-                    <label><input type="checkbox"> Sales Manager</label>
-                    <label><input type="checkbox"> VP Sales</label>
-                </div>
-            </fieldset>
+                <fieldset>
+                    <legend>Areas of Interest</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Account Executive</label>
+                        <label><input type="checkbox"> Business Development</label>
+                        <label><input type="checkbox"> Inside Sales</label>
+                        <label><input type="checkbox"> Sales Manager</label>
+                        <label><input type="checkbox"> VP Sales</label>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <legend>Additional Information</legend>
+                <fieldset>
+                    <legend>Additional Information</legend>
 
-                <label>Willing to Relocate?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="relocate"> Yes</label>
-                    <label><input type="radio" name="relocate"> No</label>
-                </div>
+                    <label>Willing to Relocate?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="relocate"> Yes</label>
+                        <label><input type="radio" name="relocate"> No</label>
+                    </div>
 
-                <label for="message">Why are you suitable for this role?</label>
-                <textarea id="message" name="message"></textarea>
-            </fieldset>
+                    <label for="message">Why are you suitable for this role?</label>
+                    <textarea id="message" name="message"></textarea>
+                </fieldset>
 
-            <button type="submit">Submit Application</button>
-        </form>
+                <button type="submit" class="btn btn-primary submit-btn">Submit Application</button>
+            </form>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
