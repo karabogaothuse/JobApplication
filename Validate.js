@@ -3,6 +3,7 @@ function validateForm() {
     let email = document.getElementById("email").value.trim();
     let phone = document.getElementById("phone").value.trim();
     let resume = document.getElementById("resume").value.trim();
+    let startDate = document.getElementById("startdate").value.trim();
     let message = document.getElementById("message").value.trim();
 
     let employment = document.querySelector('input[name="employment"]:checked');
@@ -14,6 +15,7 @@ function validateForm() {
         email === "" ||
         phone === "" ||
         resume === "" ||
+        startDate === "" ||
         !employment ||
         interests.length === 0 ||
         !relocate ||
