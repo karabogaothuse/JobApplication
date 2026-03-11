@@ -104,9 +104,9 @@ label[for="message"] {
 
 #message {
     display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 140px;
+    width: 500px;
+    max-width: 500px;
+    height: 200px;
     resize: none;
 }
 
