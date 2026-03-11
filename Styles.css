@@ -107,7 +107,6 @@ label[for="message"] {
     width: 800px;
     max-width: 900%;
     height: 200px;
-    resize: horizontal;
 }
 
 .submit-btn {
